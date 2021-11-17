@@ -9,3 +9,4 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
     network_mode: host
+    command: bash -c "/usr/bin/code --user-data-dir=/app/vsc_data --verbose"
