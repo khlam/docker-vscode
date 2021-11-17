@@ -4,4 +4,4 @@ RUN apt-get update -y && apt-get install wget -y && \
     wget -O vscode.deb "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" && \
     apt-get install /app/vscode.deb -y -f && \
     mkdir /root/vsc_data && \
-ENTRYPOINT ["/usr/bin/vscode", "--user-data-dir=/root/vsc_data", "--verbose"]
+CMD ["/usr/bin/vscode", "--user-data-dir=/root/vsc_data", "--verbose"]
